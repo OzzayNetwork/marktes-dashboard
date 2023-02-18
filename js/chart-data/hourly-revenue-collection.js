@@ -129,7 +129,7 @@ Highcharts.chart('spline_chart_container', {
         dataLabels:{
             enabled:false
         },
-        name: 'Daily Parking',
+        name: 'Boats',
         color: '#009600',
         marker: {
         symbol: ''
@@ -139,7 +139,7 @@ Highcharts.chart('spline_chart_container', {
             445742, 1995726, 307046, 866452]
 
     }, {
-        name: 'Enclosed',
+        name: 'Market Fees',
         color: '#1666c0',
         marker: {
         symbol: null
@@ -149,7 +149,7 @@ Highcharts.chart('spline_chart_container', {
             173923, 129891, 176945, 524498]
 
     },{
-        name: 'Seasonal Parking',
+        name: 'User Fees',
         color: '#FFC400',
         marker: {
         symbol: ''
@@ -159,7 +159,7 @@ Highcharts.chart('spline_chart_container', {
             72715, 4533, 1691, 631]
 
     },{
-        name: 'Clamping',
+        name: 'Cess Sand and Ballast',
         color: '#d70000',
         marker: {
         symbol: ''
@@ -169,7 +169,7 @@ Highcharts.chart('spline_chart_container', {
              1323490, 184618, 1012699, 18104]
 
     },{
-        name: 'Others',
+        name: 'Tourisms',
         color: '#e09326 ',
         marker: {
         symbol: ''
