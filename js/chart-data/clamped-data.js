@@ -24,7 +24,7 @@ Highcharts.chart('item_clamped_chart', {
         gridLineWidth: 0.3,
         min: 0,
         title: {
-            text: 'Number of Vehicles'
+            text: 'Number of Boats'
         },
         stackLabels: {
             enabled: false,
@@ -70,29 +70,17 @@ Highcharts.chart('item_clamped_chart', {
     },
 
     series: [{
-        name: 'Vehicles',
+        name: 'Boats',
         data: [{
             name: 'Compliant',
             y: 3201,
             colors: '#64A12D',
             drilldown: "Compliant"
         },{
-            name: 'To be Clamped',
+            name: 'Non-Compliant',
             y: 2500,
             colors: '#EB001F',
-            drilldown: "To be Clamped"
-
-        },{
-            name: 'Clamped',
-            y: 11,
-            colors: '#1666c0',
-            drilldown: "Clamped"
-
-        },{
-            name: 'To Be Unclamped',
-            y: 53,
-            colors: '#FFED00',
-            drilldown: "To Be Unclamped"
+            drilldown: "Non-Compliant"
 
         }],
         
@@ -116,156 +104,94 @@ Highcharts.chart('item_clamped_chart', {
             id: "Compliant",
             data: [
               [
-                "Buru",
+                "Ndhiwa",
                 100 
               ],
               [
-                "CBD",
+                "Homa-Bay-Town",
                 181 
               ],
               [
-                "COMM",
+                "Rachuonyo-North",
                 325 
               ],
               [
-                "County Bus Station",
+                "Rachuonyo-South",
                 41 
               ],
               [
-                "Eastleigh",
+                "Rachuonyo-East",
                 88
               ],
               [
-                "HighRidge",
+                "Rangwe",
                 56
               ],
               [
-                "Hurlingham",
+                "Suba-North",
                 45
               ],
               [
-                "Ind. Area",
+                "Kalanya",
                 49
               ],
               [
-                "Karen",
+                "Kanyabala",
                 32
               ],
               [
-                "Kariokor",
+                "Katuma",
                 29
-              ],
-              [
-                "Kenyatta Market",
-                79
-              ],
-              [
-                "Kijabe",
-                18
-              ],
-              [
-                "Kilimani",
-                13
-              ],
-              [
-                "Kombo",
-                16
-              ],
-              [
-                "Langata Rd",
-                13
-              ],
-              [
-                "Lavington",
-                11
-              ],
-              [
-                "Muthaiga",
-                17
-              ],
-              [
-                "Nairobi West",
-                26
               ]
+             
             ]
           },
           {
             type: 'column',
-            name: "To be Clamped",
-            id: "To be Clamped",
+            name: "Non-Compliant",
+            id: "Non-Compliant",
             data: [
                 [
-                  "Buru",
+                  "Ndhiwa",
                   100 
                 ],
                 [
-                  "CBD",
+                  "Homa-Bay-Town",
                   181 
                 ],
                 [
-                  "COMM",
+                  "Rachuonyo-North",
                   325 
                 ],
                 [
-                  "County Bus Station",
+                  "Rachuonyo-South",
                   41 
                 ],
                 [
-                  "Eastleigh",
+                  "Rachuonyo-East",
                   88
                 ],
                 [
-                  "HighRidge",
+                  "Rangwe",
                   56
                 ],
                 [
-                  "Hurlingham",
+                  "Suba-North",
                   45
                 ],
                 [
-                  "Ind. Area",
+                  "Kalanya",
                   49
                 ],
                 [
-                  "Karen",
+                  "Kanyabala",
                   32
                 ],
                 [
-                  "Kariokor",
+                  "Katuma",
                   29
-                ],
-                [
-                  "Kenyatta Market",
-                  79
-                ],
-                [
-                  "Kijabe",
-                  18
-                ],
-                [
-                  "Kilimani",
-                  133
-                ],
-                [
-                  "Kombo",
-                  168
-                ],
-                [
-                  "Langata Rd",
-                  135
-                ],
-                [
-                  "Lavington",
-                  112
-                ],
-                [
-                  "Muthaiga",
-                  170
-                ],
-                [
-                  "Nairobi West",
-                  26
                 ]
+               
               ]
           },
           {
@@ -274,43 +200,43 @@ Highcharts.chart('item_clamped_chart', {
             id: "Clamped",
             data: [
                 [
-                  "Buru",
+                  "Ndhiwa",
                   100 
                 ],
                 [
-                  "CBD",
+                  "Homa-Bay-Town",
                   181 
                 ],
                 [
-                  "COMM",
+                  "Rachuonyo-North",
                   325 
                 ],
                 [
-                  "County Bus Station",
+                  "Rachuonyo-South",
                   41 
                 ],
                 [
-                  "Eastleigh",
+                  "Rachuonyo-East",
                   88
                 ],
                 [
-                  "HighRidge",
+                  "Rangwe",
                   56
                 ],
                 [
-                  "Hurlingham",
+                  "Suba-North",
                   45
                 ],
                 [
-                  "Ind. Area",
+                  "Kalanya",
                   49
                 ],
                 [
-                  "Karen",
+                  "Kanyabala",
                   32
                 ],
                 [
-                  "Kariokor",
+                  "Katuma",
                   29
                 ],
                 [
@@ -321,30 +247,7 @@ Highcharts.chart('item_clamped_chart', {
                   "Kijabe",
                   18
                 ],
-                [
-                  "Kilimani",
-                  40
-                ],
-                [
-                  "Kombo",
-                  388 
-                ],
-                [
-                  "Langata Rd",
-                  151 
-                ],
-                [
-                  "Lavington",
-                  435 
-                ],
-                [
-                  "Muthaiga",
-                  378 
-                ],
-                [
-                  "Nairobi West",
-                  500
-                ]
+               
               ]
           },
           {
@@ -353,43 +256,43 @@ Highcharts.chart('item_clamped_chart', {
             id: "To Be Unclamped",
             data: [
                 [
-                  "Buru",
+                  "Ndhiwa",
                   100 
                 ],
                 [
-                  "CBD",
+                  "Homa-Bay-Town",
                   181 
                 ],
                 [
-                  "COMM",
+                  "Rachuonyo-North",
                   325 
                 ],
                 [
-                  "County Bus Station",
+                  "Rachuonyo-South",
                   41 
                 ],
                 [
-                  "Eastleigh",
+                  "Rachuonyo-East",
                   88
                 ],
                 [
-                  "HighRidge",
+                  "Rangwe",
                   56
                 ],
                 [
-                  "Hurlingham",
+                  "Suba-North",
                   45
                 ],
                 [
-                  "Ind. Area",
+                  "Kalanya",
                   49
                 ],
                 [
-                  "Karen",
+                  "Kanyabala",
                   32
                 ],
                 [
-                  "Kariokor",
+                  "Katuma",
                   29
                 ],
                 [
