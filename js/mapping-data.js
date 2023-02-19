@@ -66,6 +66,14 @@
             anchor: new google.maps.Point(0, 0) // anchor
         };
 
+        //Boat docking
+        var boatDock = {
+            url: "images/map-assets/Offstreet.svg", // url
+            scaledSize: new google.maps.Size(50, 50), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        };
+
         //street  icon
         var offStreet = {
             url: "images/map-assets/street-parking.svg", // url
@@ -221,20 +229,32 @@
         
 
 
-         //street coodinates
-         addMarker({
-            coords:{lat:-0.5573346819441016, lng:34.4587140271713},
-            iconImage:street_parking,
-            content:'<p class="d-none">street|unique identifer</p><h6>Tom Mboya Street</h6> <P><strong>20 parking slots available</strong> Out of <strong>27 parking slots</strong></p>'
-        });
-
+        
         //compliant car
         addMarker({
             
-            coords:{lat:-0.5686088120822177, lng:34.465171138942196},
+            
+            coords:{lat:-0.4181474706935866, lng: 34.203489440163786}, 
             iconImage:compliantCar,
             content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>KAT 211Z<span></h6>'
         });
+
+        addMarker({
+            
+           
+            coords:{lat:-0.508303500590716,  lng:  34.4789588606515}, 
+            iconImage:compliantCar,
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>KAT 211Z<span></h6>'
+        });
+
+        addMarker({
+            
+           
+            coords:{lat:-0.4924725804334766, lng: 34.02358264124939}, 
+            iconImage:compliantCar,
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>KAT 211Z<span></h6>'
+        });
+
 
         //inactive agent
         addMarker({
@@ -261,8 +281,8 @@
 
         //to clamp car
         addMarker({
-            
-            coords:{lat: -0.37069002583023425, lng:34.649947706626776},
+
+            coords:{lat: -0.48730275734891737, lng:34.33633372971536},
             iconImage:toClamp,
             content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KCV 252Y</span></h6>'
         });
@@ -270,13 +290,11 @@
         //to unclamp car
         addMarker({
             
-            coords:{lat:-0.6024924873947151, lng: 34.416737398849115},
+            
+            coords:{lat: -0.4349219535743994, lng: 34.215463911336364},
             iconImage:toUnClamp,
-            content:`<p class="d-none">car|plate num</p>
-            <h6 class="text-uppercase d-flex align-items-center">
-                <span class="unclump-car mr-2"></span>
-                <span>KBZ 2T2M</span>
-            </h6>`
+            iconImage:toClamp,
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KCV 252Y</span></h6>'
         });
 
         //incidents
@@ -294,12 +312,10 @@
 
          //clamped
          addMarker({
-            
-            coords:{lat: -0.5972050356196649, lng:34.53373203835687},
-            iconImage:clamped,
-            content:'<p class="d-none">car|plate num</p><h6  class="text-uppercase d-flex align-items-center"><span class="clamped-car mr-2"></span><span>KBY 252P</span></h6>'
+            coords:{lat: -0.3269842037287081, lng:34.53575131070251},
+            iconImage:toClamp,
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KCV 252Y</span></h6>'
         });
-
         //city hall
         addMarker({
            
@@ -314,15 +330,15 @@
              
             coords:{lat:-0.7418706462963925,lng:34.360060360497485},
             iconImage:offStreet,
-            content:'<p class="d-none">offstreetParking|identifier</p><h6>Sunken (Offstereet Parking)</h6> <P><strong>KES 5,230,600</strong> already collected</p>'
+            content:'<p class="d-none">offstreetParking|identifier</p><h6>Ndhiwa Market</h6> <P><strong>KES 5,230,600</strong> already collected</p>'
         });
 
          //buss park
          addMarker({
              
-            coords:{lat:-0.5996191024404964,lng:34.55789067157362},
-            iconImage:bus,
-            content: '<p class="d-none">offstreetParking|identifier</p><h6>Bus Park (Offstreet Parking)</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
+            coords:{lat:-0.5040672184976515, lng: 34.48208696271915},
+            iconImage:boatDock,
+            content: '<p class="d-none">offstreetParking|identifier</p><h6>Boat Docking</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
         });
 
         //service point or collection point
