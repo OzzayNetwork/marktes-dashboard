@@ -396,9 +396,9 @@ $(document).ready(function(){
 
 	var rev_difference = todays_revenue.localeCompare(yestedays_revenue);
 
-	if(rev_difference == 1){
+	if(rev_difference == -1){
 		document.getElementById("rev_diff_img").className = "ml-2 text-danger zmdi zmdi-caret-down font-22rem";
-	} else if(rev_difference == -1){
+	} else if(rev_difference == 1){
 		document.getElementById("rev_diff_img").className = "ml-2 text-success zmdi zmdi-caret-up font-22rem";
 	} else if(rev_difference == 0){
 		document.getElementById("rev_diff_img").className = "ml-2 text-warning zmdi zmdi-stop font-12";
