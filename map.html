@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
     <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- // Add the new slick-theme.css if you want the default styling -->
     <link rel="stylesheet" href="vendors/slick/slick.css" />
@@ -191,7 +193,7 @@
                         <li class="navigation__active"><a href="index.html"><i class="flaticon-bar-chart"></i>Dashboard</a></li>
                         <li class="navigation__active"><a href="map.html"><i class="zmdi zmdi-pin"></i>Map View</a></li>
                         
-                         <li class="navigation__sub">
+                         <li class="navigation__sub d-none">
                             <a href="#"><i class="flaticon-parking-7"></i>On Street Parking <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul class="">
                                 <li><a href="Compliant.html"><i class="zmdi zmdi-check mx-2"></i>Compliant</a></li>
@@ -202,7 +204,7 @@
                             </ul>
                         </li>
                         
-                        <li class="navigation__sub">
+                        <li class="navigation__sub d-none">
                             <a href="#"><i class="flaticon-parking-8"></i>Off Street Parking <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
                                 <li><a href="Sunken.html"><i class="flaticon-parking-5 mx-2"></i>Sunken</a></li>
@@ -213,11 +215,11 @@
                         </li>
                         
                                                 
-                        <li class="">
+                        <li class="d-none">
                             <a href="Seasonal.html"><i class="flaticon-calendar"></i>Seasonal Parking</a>
                         </li>
                         
-                        <li class="navigation__sub">
+                        <li class="navigation__sub d-none">
                             <a href="#"><i class="flaticon-key-2"></i>Enforcement <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
                                 <li><a href="TLB.html"><i class="flaticon-hook mx-2"></i>TLB</a></li>
@@ -813,7 +815,7 @@
                         </div>
                     </div>
                     <div class="map-cont-header">
-                        <h2 class="chat__title">KAD 567Y <small>Car category</small></h2>
+                        <h2 class="chat__title">TS 4554 RT <small class="d-none">Car category</small></h2>
                         <i class="zmdi zmdi-close close-aside"></i>
                     </div>
 
@@ -834,7 +836,7 @@
 
                         <div class="listview bg-primary">
                             <div class="listview__item py-2">
-                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-car-1"></i><span>Current parking status</span></div>
+                                <div class="listview__heading text-white map-stat-header"><i class="mdi mdi-sail-boat"></i><span>Compliancy status</span></div>
                             </div>
 
                         </div>
@@ -848,7 +850,7 @@
 
                         <div class="listview bg-primary">
                             <div class="listview__item py-2">
-                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-smartphone"></i><span>Parking statuses timelines</span></div>
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-smartphone"></i><span>enforcment Timelines</span></div>
                             </div>
 
                         </div>
@@ -864,11 +866,11 @@
                                 <tr>
                                     <td><strong>8:00 AM</strong></td>
                                     <td class="text-left text-wrap">
-                                        The vehicle was queried and was found to be non compliant
+                                        The boat was queried and was found to be non compliant
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr class="d-none">
                                     <td><strong>8:45 AM</strong></td>
                                     <td class="text-left text-wrap">
                                         The vehicle was clamped by Mr Miheso
@@ -878,15 +880,116 @@
                                 <tr>
                                     <td><strong>9:00 AM</strong></td>
                                     <td class="text-left text-wrap">
-                                        The owner paid for the parking penalty
+                                        The owner paid his required fees.
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="d-none">
                                     <td><strong>9:02 AM</strong></td>
                                     <td class="text-left text-wrap">
                                         The car was unclaped by Ms Jane.
                                     </td>
                                 </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="map-cont-footer">
+                    </div>
+                </aside>
+
+                <!-- docking details details -->
+                <aside class="map-info-cont animated slideInLeft left-100" id="docking-info">
+
+                    <!-- show this when loading the new data -->
+                    <div class="map-loader d-none">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="map-cont-header">
+                        <h2 class="chat__title">Mapema Docking Bay <small class="d-non">Docking Zone</small></h2>
+                        <i class="zmdi zmdi-close close-aside"></i>
+                    </div>
+
+                    <div class="scroll-wrapper scrollbar-inner">
+
+                        <!-- street image if any -->
+                        <div class="map-cont-img">
+                            <img src="images/non_compliant.jpeg">
+                        </div>
+                        <div class="listview">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="selected-point-details m-3 p-3">
+                                        <h6>Location Details</h6>
+
+                                        <p class="mb-0"><strong>Sub County</strong></p>
+                                        <p class="clicked-subcounty">Rangwe</p>
+
+                                        <p class="mb-0"><strong>Ward</strong></p>
+                                        <p class="clicked-ward">Rangwe</p>
+
+                                        <p class="mb-0"><strong>Street</strong></p>
+                                        <p class="clicked-street">Unnamed Road</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="mdi mdi-sail-boat"></i><span>Compliancy status</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="listview">
+                            <div class="listview__item py-2">
+                                <strong class="text-success">Compliant</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="listview bg-primary">
+                            <div class="listview__item py-2">
+                                <div class="listview__heading text-white map-stat-header"><i class="flaticon-smartphone"></i><span>enforcment Timelines</span></div>
+                            </div>
+
+                        </div>
+                        <table class="table table-sm">
+                            <thead class="d-none">
+                                <tr>
+                                    <td><strong>Time:</strong></td>
+                                    <td><strong>Details</strong></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>Docked Boats</strong></td>
+                                    <td class="text-left text-wrap">
+                                        54
+                                    </td>
+                                </tr>
+
+                                <tr class="d-">
+                                    <td><strong>Compliant Boats</strong></td>
+                                    <td class="text-left text-wrap">
+                                        30 Boats
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Uncompliant Boats</strong></td>
+                                    <td class="text-left text-wrap">
+                                        24 Boats
+                                    </td>
+                                </tr>
+                               
                             </tbody>
                         </table>
 

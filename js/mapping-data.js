@@ -236,7 +236,7 @@
             
             coords:{lat:-0.4181474706935866, lng: 34.203489440163786}, 
             iconImage:compliantCar,
-            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>KAT 211Z<span></h6>'
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>TS 4554 AY<span></h6>'
         });
 
         addMarker({
@@ -244,7 +244,7 @@
            
             coords:{lat:-0.508303500590716,  lng:  34.4789588606515}, 
             iconImage:compliantCar,
-            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>KAT 211Z<span></h6>'
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>TS 4554 RT<span></h6>'
         });
 
         addMarker({
@@ -252,7 +252,7 @@
            
             coords:{lat:-0.4924725804334766, lng: 34.02358264124939}, 
             iconImage:compliantCar,
-            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>KAT 211Z<span></h6>'
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>WS 4554 AY<span></h6>'
         });
 
 
@@ -284,7 +284,7 @@
 
             coords:{lat: -0.48730275734891737, lng:34.33633372971536},
             iconImage:toClamp,
-            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KCV 252Y</span></h6>'
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>WS 1254 AB</span></h6>'
         });
 
         //to unclamp car
@@ -294,7 +294,7 @@
             coords:{lat: -0.4349219535743994, lng: 34.215463911336364},
             iconImage:toUnClamp,
             iconImage:toClamp,
-            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KCV 252Y</span></h6>'
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>WS 1254 AB</span></h6>'
         });
 
         //incidents
@@ -314,7 +314,7 @@
          addMarker({
             coords:{lat: -0.3269842037287081, lng:34.53575131070251},
             iconImage:toClamp,
-            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KCV 252Y</span></h6>'
+            content:'<p class="d-none">car|plate num</p><h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>WS 1254 AB</span></h6>'
         });
         //city hall
         addMarker({
@@ -338,7 +338,7 @@
              
             coords:{lat:-0.5040672184976515, lng: 34.48208696271915},
             iconImage:boatDock,
-            content: '<p class="d-none">offstreetParking|identifier</p><h6>Boat Docking</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
+            content: '<p class="d-none">boatDock|identifier</p><h6>Mapema Docking Bay</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
         });
 
         //service point or collection point
@@ -449,6 +449,15 @@
                     if(theGroup=="street"){
                         //function for on street parking
                         $('#street-info').removeClass('left-100').siblings().addClass('left-100');
+                        $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        
+                    }
+
+                    // boat docking invocation
+                    if(theGroup=="boatDock"){
+                        //function for on street parking
+                        $('#docking-info').removeClass('left-100').siblings().addClass('left-100');
                         $('.main-map-container .ma-backdrop').removeClass('d-none');
                         $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                         
